@@ -56,12 +56,14 @@ The development workflow goes like this :
     `git checkout <branch-name>`
     This brings you to your new branch \<branch-name>.
     
-4. Now, open up your text editor, make some changes to the files you want to, save it. When you have made a considerable amount of change, `commit`. You should not commit neither too often nor too late.
+4. Now, open up your text editor, make some changes to the files you want to, save it. When you have made a considerable amount of change, `commit`. You should commit neither too often nor too late.
 
     The process of commiting goes like this:
     
     `git status` : This shows the status of your files, i.e. it shows which files are present in the staging area and which are not.
+    
     `git add <path/to/file>` : This adds the selected files to the staging area. To add, all the files to staging area, do `git add .`
+    
     `git commit` : On doing this, a text editor opens up and you are asked to enter a commmit message. Commit message should be short (less than 50 characters), and should convey what change you have made. Keep the commit message as meaningful as possible.
     
 5. You have successfully committed your changes. You can add a few more commits, and then push these changes to your remote repository by :
@@ -69,3 +71,13 @@ The development workflow goes like this :
     Note that all these changes took place in your created branch \<branch-name> , and you can delete whatever changes you made by deleting the branch. The above command pushed youur code online to your github repository.
     
 6. Go to github's online repository and you can see an option of `Compare and Pull request` against your recently pushed branches. Make a Pull request by entering a short meaningful message and a meaningful comment about what your pull request does.
+
+### Mock practice for new-comers
+
+To get yourself familiar with the development workflow, you can practice sending a PR on our git-sandbox (https://github.com/mathletes/git-sandbox). Clone this repo and add your name in the list.! :D
+
+-------------------------------
+
+For any doubts and dicussions, join the gitter channel, by clicking on the gitter-badger button at the top of the README. Feel free to open issues, send pull requests and review them. 
+
+The website's URL is given in the decription and it will reflect your changes once your PR is merged into master.
