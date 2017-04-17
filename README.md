@@ -25,7 +25,7 @@ This will install all the requirements needed to run the app, i.e. `flask` and `
 
 Then, run the flask application by:
 
-`python app.py`
+`gunicorn app:app -b 127.0.0.1:5000`
 
 This will set the website running on your local server. To see your website running, open your browser and enter this URL:
 
