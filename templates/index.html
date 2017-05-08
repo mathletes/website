@@ -10,9 +10,10 @@ Licence URI: http://www.os-templates.com/template-terms
 <head>
 <title>Mathletes</title>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link href="static/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <link rel="icon" type="image/x-icon" href="static/images/demo/favicon.ico">
+<link href="static/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all" />
+<link href="static/layout/styles/searchlayout.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body id="top">
 <div class="wrapper row0">
@@ -79,8 +80,12 @@ Licence URI: http://www.os-templates.com/template-terms
       <li><a href="#">Placements</a></li>
       <li><a href="#">Fundae</a></li>
       <li><a href="#">Join Us</a></li>
+      <li><input type="text" placeholder="Search the website" id="searchbar"/></li>
     </ul>
   </nav>
+</div>
+<div class="searchdisplay wrapper row6" id="searchdiv">
+	No search results found for your query.
 </div>
 <div class="wrapper bgded overlay" style="background-image:url('static/images/demo/backgrounds/mathematics.jpg');">
   <article id="pageintro" class="hoc clear"> 
@@ -291,5 +296,6 @@ Licence URI: http://www.os-templates.com/template-terms
 <script src="static/layout/scripts/jquery.min.js"></script>
 <script src="static/layout/scripts/jquery.backtotop.js"></script>
 <script src="static/layout/scripts/jquery.mobilemenu.js"></script>
+<script src="static/layout/scripts/search.js"></script>
 </body>
 </html>
