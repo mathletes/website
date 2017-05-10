@@ -13,6 +13,8 @@ Licence URI: http://www.os-templates.com/template-terms
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <link href="static/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all" />
 <link href="static/layout/styles/searchlayout.css" rel="stylesheet" type="text/css" media="all" />
+<link href="static/layout/styles/timetable.css" rel="stylesheet" type="text/css" media="all" />
+<link href="static/layout/styles/semmaterials.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body id="top">
 <div class="wrapper row0">
@@ -65,14 +67,21 @@ Licence URI: http://www.os-templates.com/template-terms
           <li><a href="#">Curriculum</a></li>
           <li><a class="drop" href="#">Materials</a>
             <ul>
-              <li><a href="#">3rd Semester</a></li>
-              <li><a href="#">4th Semester</a></li>
-              <li><a href="#">5th Semester</a></li>
+              <li><a href="#">3<sup>rd</sup> Semester</a></li>
+              <li><a href="#">4<sup>th</sup> Semester</a></li>
+              <li><a href="#">5<sup>th</sup> Semester</a></li>
             </ul>
           </li>
           <li><a href="#">Additionals</a></li>
-          <li><a href="#">Timetable</a></li>
-          <li><a href="#">Academic Calender</a></li>
+          <li><a href="#" class="drop">Timetable</a>
+            <ul>
+              <li><a href="#" class="yeartable">2<sup>nd</sup> Year</a></li>
+              <li><a href="#" class="yeartable">3<sup>rd</sup> Year</a></li>
+              <li><a href="#" class="yeartable">4<sup>th</sup> Year</a></li>
+              <li><a href="#" class="yeartable">5<sup>th</sup> Year</a></li>
+            </ul>
+          </li>
+          <li><a href="http://iitkgp.ac.in/files/acad_cal1718.pdf;jsessionid=499892B3E4AC1D3CD0FEAD1E14E59988" target="_blank">Academic Calender</a></li>
         </ul>
       </li>
       <li><a href="#">Non-Academics</a></li>
@@ -86,6 +95,8 @@ Licence URI: http://www.os-templates.com/template-terms
 <div class="searchdisplay wrapper row6" id="searchdiv">
 	No search results found for your query.
 </div>
+<div class="timetable wrapper row7" id="timediv">
+</div>
 <div class="wrapper bgded overlay" style="background-image:url('static/images/demo/backgrounds/mathematics.jpg');">
   <article id="pageintro" class="hoc clear"> 
     <h3 class="heading">Department of Mathematics, <br>IIT Kharagpur</h3>
@@ -93,15 +104,27 @@ Licence URI: http://www.os-templates.com/template-terms
     <!--<footer><a class="btn" href="#">Peek</a></footer>-->
   </article>
 </div>
-<div class="wrapper row3">
+<div class="materialselect wrapper row 8">
+  <button>1<sup>st</sup> Semester</button>
+  <button>2<sup>nd</sup> Semester</button>
+  <button>3<sup>rd</sup> Semester</button>
+  <button>4<sup>th</sup> Semester</button>
+  <button>5<sup>th</sup> Semester</button>
+  <button>6<sup>th</sup> Semester</button>
+  <button>7<sup>th</sup> Semester</button>
+  <button>8<sup>th</sup> Semester</button>
+  <button>9<sup>th</sup> Semester</button>
+  <button>10<sup>th</sup> Semester</button>
+</div>
+<div class="wrapper row3 hide">
   <main class="hoc container clear"> 
     <!-- main body --> 
     <ul class="nospace group">
       <li class="one_third first">
         <article><i class="btmspace-30 fa fa-3x fa-american-sign-language-interpreting"></i>
           <h6 class="heading font-x1">Semester-wise materials</h6>
-          <p class="btmspace-30">Volutpat tellus id consectetur elit risus at augue aliquam eu efficitur quam aliquam nulla magna malesuada quis [&hellip;]</p>
-          <footer><a class="btn" href="#">Read More &rsaquo;</a></footer>
+          <p class="btmspace-30">Have a quick access to course materials here.</p>
+          <footer><a class="btn semmaterials">Download &rsaquo;</a></footer>
         </article>
       </li>
       <li class="one_third">
@@ -296,5 +319,7 @@ Licence URI: http://www.os-templates.com/template-terms
 <script src="static/layout/scripts/jquery.backtotop.js"></script>
 <script src="static/layout/scripts/jquery.mobilemenu.js"></script>
 <script src="static/layout/scripts/search.js"></script>
+<script src="static/layout/scripts/timetable.js"></script>
+<script src="static/layout/scripts/semmaterials.js"></script>
 </body>
 </html>
