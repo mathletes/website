@@ -3,7 +3,7 @@
 	background-color: white;
 }
 .materialselect button{
-	background-color: white;
+	background-color: #562351;
 	display:inline;
 	width:18%;
 	height:60px;
@@ -11,4 +11,25 @@
 	margin-bottom: 10px;
 	margin-left:10px;
 	margin-right:10px;
+	border-style:none;
+	color:white;
+}
+
+.materialselect .level2,.level3{
+	display:none;
+}
+
+#closematerialselect{
+	position:absolute;
+	top:0px;
+	right:0px;
+	z-index: 99999;
+	display: block;
+	width:20px;
+	margin-right:5px;
+	margin-top:5px;
+}
+
+#closematerialselect:hover{
+	width:22px;
 }
