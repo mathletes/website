@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 app = Flask(__name__)
 
 @app.route("/")
@@ -24,6 +24,12 @@ def team():
 @app.route("/templates/pages/basic-grid.html")
 def upcomingEvents():
 	return render_template("pages/basic-grid.html")
+
+@app.route("/searchQuery", methods=["POST"])
+def searchQuery():
+	return "Hello"+request.form["query"];
+	#return ['query'];
+
 
 if __name__ == "__main__":
     app.run()
