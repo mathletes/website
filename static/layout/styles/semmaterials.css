@@ -13,6 +13,8 @@
 	margin-right:10px;
 	border-style:none;
 	color:white;
+	box-sizing: border-box;
+	padding:0px 0px 0px 0px;
 }
 
 .materialselect .level2,.level3{
@@ -32,4 +34,12 @@
 
 #closematerialselect:hover{
 	width:22px;
+}
+
+.tempbuttons{
+	width:50%;
+	background-color:white;
+	border:1px solid rgb(71,71,71);
+	color:rgb(71,71,71);
+	margin:0px 0px 0px 0px;
 }
