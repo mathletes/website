@@ -27,9 +27,12 @@ def upcomingEvents():
 
 @app.route("/searchQuery", methods=["POST"])
 def searchQuery():
-	return "Hello"+request.form["query"];
+	return "Hello "+request.form["query"];
 	#return ['query'];
 
+@app.route("/signup")
+def signUp():
+	return render_template("pages/signup.html")
 
 if __name__ == "__main__":
     app.run()
