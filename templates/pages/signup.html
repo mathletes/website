@@ -13,6 +13,7 @@ Licence URI: http://www.os-templates.com/template-terms
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <link rel="icon" type="image/x-icon" href="static/images/demo/favicon.ico">
 <link href="static/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all" />
+<link href="static/layout/styles/signuplayout.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body id="top">
 <div class="wrapper row0">
@@ -47,8 +48,28 @@ Licence URI: http://www.os-templates.com/template-terms
     </div>
   </header>
 </div>
+<div class="wrapper">
+  <form id="signupform">
+    <input type="file" id="userimage"/><br/>
+    <input type="text" placeholder="First Name"/>
+    <input type="text" placeholder="Last Name"/>
+    <input type="text" placeholder="Roll Number"/>
+    <input type="email" placeholder="Email"/>
+    <input type="number" placeholder="Cell"/>
+    <input type="number"  placeholder="Year Of Study"/>
+    <input type="text" placeholder="Hometown" />
+    <input type="date" placeholder="Date Of Birth" />
+    <input type="text" placeholder="Github Username" />
+    <input type="password" placeholder="Password" />
+    <input type="password" placeholder="Confirm Password"/>
+    <input type="text" placeholder="Hall of Residence" />
+    <br/>
+    <button id="submitbutton">Submit</button>
+  </form>
+</div>
 <script src="static/layout/scripts/jquery.min.js"></script>
 <script src="static/layout/scripts/jquery.backtotop.js"></script>
 <script src="static/layout/scripts/jquery.mobilemenu.js"></script>
+<script src="static/layout/scripts/signup.js"></script>
 </body>
 </html>
