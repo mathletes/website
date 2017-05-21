@@ -24,5 +24,29 @@
 }
 
 #submitbutton:hover{
+	border:1px solid white;
+	color:white;
+	background-color: rgba(0,0,0,0);
+}
 
+#submitbutton:click{
+	border:1px solid #562351;
+	color:white;
+	background-color: rgba(0,0,0,0);
+}
+
+#imageloader{
+	background-image:url("../../images/profile_dummy.jpg");
+	background-size: contain;
+	width: 100px;
+	height: 100px;
+	margin:10px auto 10px 2.4%;
+}
+
+#imageloader:hover{
+	border:2px solid black;
+}
+
+#userimage {
+	display:none;
 }

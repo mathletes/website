@@ -49,8 +49,10 @@ Licence URI: http://www.os-templates.com/template-terms
   </header>
 </div>
 <div class="wrapper">
-  <form id="signupform">
-    <input type="file" id="userimage"/><br/>
+  <br/>
+  <div id="imageloader"></div>
+  <form id="signupform" onsubmit="return false">
+    <input type="file" id="userimage"/>
     <input type="text" placeholder="First Name"/>
     <input type="text" placeholder="Last Name"/>
     <input type="text" placeholder="Roll Number"/>
@@ -63,7 +65,7 @@ Licence URI: http://www.os-templates.com/template-terms
     <input type="password" placeholder="Password" />
     <input type="password" placeholder="Confirm Password"/>
     <input type="text" placeholder="Hall of Residence" />
-    <br/>
+    <br/><br/>
     <button id="submitbutton">Submit</button>
   </form>
 </div>
