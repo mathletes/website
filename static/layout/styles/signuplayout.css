@@ -37,7 +37,7 @@
 
 #imageloader{
 	background-image:url("../../images/profile_dummy.jpg");
-	background-size: contain;
+	background-size: 100% 100%;
 	width: 100px;
 	height: 100px;
 	margin:10px auto 10px 2.4%;
@@ -50,3 +50,15 @@
 #userimage {
 	display:none;
 }
+
+#cellno::-webkit-inner-spin-button,
+#cellno::-webkit-outer-spin-button{
+	-webkit-appearance:none;
+	margin: 0;
+}
+
+/*input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}/*

@@ -50,15 +50,15 @@ Licence URI: http://www.os-templates.com/template-terms
 </div>
 <div class="wrapper">
   <br/>
-  <div id="imageloader"></div>
-  <form id="signupform" onsubmit="return false">
+  <div id="imageloader" title="Your image should be a nearly square image of either jpeg or png type."></div>
+  <form id="signupform" onsubmit="return false" method="POST" enctype="multipart/form-data">
     <input type="file" id="userimage"/>
     <input type="text" placeholder="First Name"/>
     <input type="text" placeholder="Last Name"/>
-    <input type="text" placeholder="Roll Number"/>
+    <input type="text" placeholder="Roll Number" id="rollno"/>
     <input type="email" placeholder="Email"/>
-    <input type="number" placeholder="Cell"/>
-    <input type="number"  placeholder="Year Of Study"/>
+    <input type="number" placeholder="Cell" maxlength="10" id="cellno"/>
+    <input type="number"  placeholder="Year Of Study" min="1" max="5"/>
     <input type="text" placeholder="Hometown" />
     <input type="date" placeholder="Date Of Birth" />
     <input type="text" placeholder="Github Username" />
