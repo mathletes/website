@@ -1,6 +1,11 @@
 $(document).ready(function(){
 	var flagimg = true;
 	var flagroll = false;
+	var flagpassword = false;
+	var flagfirstname = false;
+	var flaglastname = false;
+	var flaghometown = false;
+	var flagcellno = false;
 	var currentDate = new Date();
 	$("#imageloader").click(function(){
 		$("#userimage").trigger("click");
@@ -36,9 +41,9 @@ $(document).ready(function(){
 
     $("#cellno").change(function(){
     	alert($(this).val());
-    	if( 1000000000<$(this).val() && $(this).val()<9999999999) alert("Working");
+    	if(1000000000<$(this).val() && $(this).val()<9999999999) flagcellno = true;
     	else {
-    		alert("Please enter a valid number.");
+    		flagcellno = false;
     		$(this).val("");
     	}
     });
@@ -58,6 +63,70 @@ $(document).ready(function(){
     					flagroll = true;
     		}
     	}
+    	if(flagroll == false)
+    		$(this).val("");
     });
 
+    $("#repassword").change(function(){
+    	if($("#repassword").val()===$("#password").val())
+    		flagpassword = true;
+    	else 
+    	{
+    		flagpassword = false;
+    		$("#password").val("");
+    		$("#repassword").val("");
+		}
+    	if($("repassword").val()=="")
+    		flagpassword = false;
+    		alert (flagpassword);
+    });
+
+  	$(".letter").change(function(){
+  		alert($(this).val());
+  		var checkname = $(this).val();
+  		var fieldname = $(this).attr("placeholder");
+  		if (allLetter(checkname)==true)
+  		{
+  			if(fieldname == "First Name")
+  			{
+  				flagfirstname = true;
+  			}
+  			if(fieldname == "Last Name")
+  			{
+  				flaglastname = true;
+  			}
+  			if(fieldname == "Hometown")
+  			{
+  				flaghometown = true;
+  			}
+  		}
+  		else
+  		{
+  			if(fieldname == "First Name")
+  			{
+  				flagfirstname = false;
+  			}
+  			if(fieldname == "Last Name")
+  			{
+  				flaglastname = false;
+  			}
+  			if(fieldname == "Hometown")
+  			{
+  				flaghometown = false;
+  			}
+  		}
+  	});
+
+  	function allLetter(inputtxt)  
+  	{  
+   		var letters = /^[A-Z a-z]+$/;  
+   		if(inputtxt.match(letters))  
+     	{  
+      		return true;  
+     	}  
+   		else  
+     	{    
+     		return false;  
+     	}  
+  	}  
 });

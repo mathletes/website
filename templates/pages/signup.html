@@ -52,19 +52,31 @@ Licence URI: http://www.os-templates.com/template-terms
   <br/>
   <div id="imageloader" title="Your image should be a nearly square image of either jpeg or png type."></div>
   <form id="signupform" onsubmit="return false" method="POST" enctype="multipart/form-data">
-    <input type="file" id="userimage"/>
-    <input type="text" placeholder="First Name"/>
-    <input type="text" placeholder="Last Name"/>
-    <input type="text" placeholder="Roll Number" id="rollno"/>
-    <input type="email" placeholder="Email"/>
-    <input type="number" placeholder="Cell" maxlength="10" id="cellno"/>
-    <input type="number"  placeholder="Year Of Study" min="1" max="5"/>
-    <input type="text" placeholder="Hometown" />
-    <input type="date" placeholder="Date Of Birth" />
-    <input type="text" placeholder="Github Username" />
-    <input type="password" placeholder="Password" />
-    <input type="password" placeholder="Confirm Password"/>
-    <input type="text" placeholder="Hall of Residence" />
+    <input type="file" name="userimage" id="userimage"/>
+    <input type="text" name="firstname" placeholder="First Name" id="firstname" class="letter" required="required"/>
+    <input type="text" name="lastname" placeholder="Last Name" id="lastname" class="letter" required="required"/>
+    <input type="text" name="rollno" placeholder="Roll Number" id="rollno" required="required"/>
+    <input type="email" name="email" placeholder="Email" required="required"/>
+    <input type="number" name="cell" placeholder="Cell" maxlength="10" id="cellno" required="required"/>
+    <input type="number" name="yearofstudy" placeholder="Year Of Study" min="1" max="5" required="required"/>
+    <input type="text" name="hometown" placeholder="Hometown" id="Hometown" class="letter" required="required"/>
+    <input type="text" name="dob" placeholder="Date Of Birth" required="required" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}"/>
+    <input type="text" name="github" placeholder="Github Username (Optional)" />
+    <input type="password" name="password" placeholder="Password" id="password" required="required"/>
+    <input type="password" name="repassword" placeholder="Confirm Password" id="repassword" required="required"/>
+    <select name="hall" id="hallname" required="required">
+      <option value="" disabled selected>Hall of Residence</option>
+      <option value="azad">Azad</option>
+      <option value="nehru">Nehru</option>
+      <option value="patel">Patel</option>
+      <option value="rk">RK</option>
+      <option value="rp">RP</option>
+      <option value="lbs">LBS</option>
+      <option value="llr">LLR</option>
+      <option value="ms">MS</option>
+      <option value="hjb">HJB</option>
+      <option value="jcb">JCB</option>
+    </select>
     <br/><br/>
     <button id="submitbutton">Submit</button>
   </form>
