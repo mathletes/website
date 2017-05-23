@@ -45,5 +45,9 @@ def signUp():
     return str(rv)"""
 	return render_template("pages/signup.html")
 
+@app.route("/announcements")
+def announcement():
+	return render_template("pages/announcements.html");
+
 if __name__ == "__main__":
     app.run(debug=True)
