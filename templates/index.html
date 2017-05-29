@@ -16,6 +16,7 @@ Licence URI: http://www.os-templates.com/template-terms
 <link href="static/layout/styles/searchlayout.css" rel="stylesheet" type="text/css" media="all" />
 <link href="static/layout/styles/timetable.css" rel="stylesheet" type="text/css" media="all" />
 <link href="static/layout/styles/semmaterials.css" rel="stylesheet" type="text/css" media="all" />
+<link href="static/layout/styles/materialupload.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body id="top">
 <div class="wrapper row0">
@@ -137,6 +138,16 @@ Licence URI: http://www.os-templates.com/template-terms
     <button>Question Papers</button>
   </div>
 </div>
+<div class="materialupload wrapper row9">
+  <img id="closematerialupload" src="static/images/closebutton/closebutton.png" />
+  <br/>
+  <input type="text" name="uploadername" placeholder="Uploader Name" required="required" id="uploadername"/>
+  <input type="url" name="materiallink" placeholder="Material Link"  id="materiallink"/>
+  <input type="file" name="materialfile" placeholder="Material File" id="materialfile" />
+  <textarea placeholder="Description (Optional)" id="materialdescription" rows="3"></textarea>
+  <button id="materialuploadbutton">Upload</button>
+</div>
+<br/>
 <div class="wrapper row3 hide">
   <main class="hoc container clear"> 
     <!-- main body --> 
@@ -157,9 +168,9 @@ Licence URI: http://www.os-templates.com/template-terms
       </li>
       <li class="one_third">
         <article><i class="btmspace-30 fa fa-3x fa-expeditedssl"></i>
-          <h6 class="heading font-x1">Random fundae 2</h6>
-          <p class="btmspace-30">Neque ut facilisis dolor interdum quis morbi ac enim eget nisi tristique facilisis aliquam tempus condimentum eros [&hellip;]</p>
-          <footer><a class="btn" href="#">Read More &rsaquo;</a></footer>
+          <h6 class="heading font-x1">Batch Upload</h6>
+          <p class="btmspace-30">Upload Materials for your batch-mates to help them ease out their study.</p>
+          <footer><a class="btn" href="#">&nbsp;&nbsp;&nbsp;Upload &rsaquo;&nbsp;&nbsp;&nbsp;</a></footer>
         </article>
       </li>
     </ul>
@@ -342,5 +353,6 @@ Licence URI: http://www.os-templates.com/template-terms
 <script src="static/layout/scripts/search.js"></script>
 <script src="static/layout/scripts/timetable.js"></script>
 <script src="static/layout/scripts/semmaterials.js"></script>
+<script src="static/layout/scripts/materialupload.js"></script>
 </body>
 </html>
