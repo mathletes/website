@@ -1,5 +1,8 @@
 from flask import Flask, render_template, request
+#from flask_mysqldb import MySQL
+
 app = Flask(__name__)
+#mysql = MySQL(app)
 
 @app.route("/")
 def main():
@@ -27,9 +30,24 @@ def upcomingEvents():
 
 @app.route("/searchQuery", methods=["POST"])
 def searchQuery():
-	return "Hello"+request.form["query"];
+	return "Hello "+request.form["query"];
 	#return ['query'];
 
+@app.route("/signup")
+def signUp():
+	#conn = MySQL.connect(host="localhost", user="root", passwd="", db="mathletesdb")
+	"""Before running this command make sure that flask_mysqldb is installed (sudo pip install flask-mysqldb)
+	and its often required dependency mysqlconfig (sudo apt-get install ibmysqlclient-dev).
+	Also make sure that the connection strings (i.e host, user, passwd, db) are set properly"""
+	"""cur = mysql.connection.cursor()
+    cur.execute('''SELECT user, host FROM mysql.user''')
+    rv = cur.fetchall()
+    return str(rv)"""
+	return render_template("pages/signup.html")
+
+@app.route("/announcements")
+def announcement():
+	return render_template("pages/announcements.html");
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)

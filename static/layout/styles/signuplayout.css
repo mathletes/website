@@ -1,0 +1,65 @@
+#signupform input, #hallname{
+	width:45%;
+	font-size:18px;
+	border-style:none;
+	border-bottom:1px solid rgb(71, 71, 71);
+	display:inline-block;
+	background-color: rgba(0, 0, 0, 0);
+	margin:10px 2.4% 10px 2.4%;
+	padding: 4px;
+}
+
+#userimage{
+	display:block;
+}
+
+#submitbutton{
+	background-color:#562351;
+	border-style:none;
+	color:white;
+	font-size:16px;
+	margin-left:auto;
+	margin-right:auto;
+	padding: 10px 18px 10px 18px;
+	width:137px;
+}
+
+#submitbutton:hover{
+	border:1px solid white;
+	color:white;
+	background-color: rgba(0,0,0,0);
+}
+
+#submitbutton:click{
+	border:1px solid #562351;
+	color:white;
+	background-color: rgba(0,0,0,0);
+}
+
+#imageloader{
+	background-image:url("../../images/profile_dummy.jpg");
+	background-size: 100% 100%;
+	width: 100px;
+	height: 100px;
+	margin:10px auto 10px 2.4%;
+}
+
+#imageloader:hover{
+	border:2px solid black;
+}
+
+#userimage {
+	display:none;
+}
+
+#cellno::-webkit-inner-spin-button,
+#cellno::-webkit-outer-spin-button{
+	-webkit-appearance:none;
+	margin: 0;
+}
+
+/*input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}/*

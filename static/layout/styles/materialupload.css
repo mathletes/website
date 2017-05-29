@@ -1,0 +1,44 @@
+.materialupload{
+	background-color: white;
+	padding-top: 45px;
+	padding-bottom:45px;
+}
+
+.materialupload input, button, textarea{
+	color:rgb(71,71,71);
+	margin:10px auto 10px auto;
+}
+
+.materialupload input, textarea{
+	width:75%;
+	font-size:18px;
+}
+
+.materialupload input{
+	border-style:none;
+	border-bottom:1px solid rgb(71,71,71);
+}
+
+#materialuploadbutton{
+	background-color: #562351;
+	border-style:none;
+	color:white;
+	font-size:16px;
+	padding: 12px 18px 12px 18px;
+	width:137px;
+	margin-top:22px;
+}
+
+#submitbutton:hover{
+	border:1px solid white;
+	color:white;
+	background-color: rgba(0,0,0,0);
+}
+
+#materialdescription{
+	border-color:rgb(71,71,71);
+}
+
+#materialdescription:focus{
+	border-color: #562351;
+}

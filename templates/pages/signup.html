@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+Template Name: Algenius
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html lang="">
+<head>
+<title>Mathletes</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="icon" type="image/x-icon" href="static/images/demo/favicon.ico">
+<link href="static/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all" />
+<link href="static/layout/styles/signuplayout.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body id="top">
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear"> 
+    <div class="fl_left">
+      <ul>
+        <li><i class="fa fa-phone"></i> +91 (987) 654 3210</li>
+        <li><i class="fa fa-envelope-o"></i> mathsiitkgp2k15@gmail.com</li>
+      </ul>
+    </div>
+    <div class="fl_right">
+      <ul>
+        <li><a href="#"><i class="fa fa-lg fa-home"></i></a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="wrapper row1">
+  <header id="header" class="hoc clear"> 
+    <div id="logo" class="fl_left">
+      <h1><a href="#">Mathletes</a></h1>
+    </div>
+    <div id="quickinfo" class="fl_right">
+      <ul class="nospace inline">
+        <!--<li><strong>Jindal:</strong><br>
+          +91 (123) 456 7890</li>
+        <li><strong>Nitin:</strong><br>
+          +91 (123) 456 7890</li>-->
+      </ul>
+    </div>
+  </header>
+</div>
+<div class="wrapper">
+  <br/>
+  <div id="imageloader" title="Your image should be a nearly square image of either jpeg or png type."></div>
+  <form id="signupform" onsubmit="return false" method="POST" enctype="multipart/form-data">
+    <input type="file" name="userimage" id="userimage"/>
+    <input type="text" name="firstname" placeholder="First Name" id="firstname" class="letter" required="required"/>
+    <input type="text" name="lastname" placeholder="Last Name" id="lastname" class="letter" required="required"/>
+    <input type="text" name="rollno" placeholder="Roll Number" id="rollno" required="required"/>
+    <input type="email" name="email" placeholder="Email" required="required"/>
+    <input type="number" name="cell" placeholder="Cell" maxlength="10" id="cellno" required="required"/>
+    <input type="number" name="yearofstudy" placeholder="Year Of Study" min="1" max="5" required="required"/>
+    <input type="text" name="hometown" placeholder="Hometown" id="Hometown" class="letter" required="required"/>
+    <input type="text" name="dob" placeholder="Date Of Birth" required="required" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}"/>
+    <input type="text" name="github" placeholder="Github Username (Optional)" />
+    <input type="password" name="password" placeholder="Password" id="password" required="required"/>
+    <input type="password" name="repassword" placeholder="Confirm Password" id="repassword" required="required"/>
+    <select name="hall" id="hallname" required="required">
+      <option value="" disabled selected>Hall of Residence</option>
+      <option value="azad">Azad</option>
+      <option value="nehru">Nehru</option>
+      <option value="patel">Patel</option>
+      <option value="rk">RK</option>
+      <option value="rp">RP</option>
+      <option value="lbs">LBS</option>
+      <option value="llr">LLR</option>
+      <option value="ms">MS</option>
+      <option value="hjb">HJB</option>
+      <option value="jcb">JCB</option>
+    </select>
+    <br/><br/>
+    <button id="submitbutton">Submit</button>
+  </form>
+</div>
+<script src="static/layout/scripts/jquery.min.js"></script>
+<script src="static/layout/scripts/jquery.backtotop.js"></script>
+<script src="static/layout/scripts/jquery.mobilemenu.js"></script>
+<script src="static/layout/scripts/signup.js"></script>
+</body>
+</html>

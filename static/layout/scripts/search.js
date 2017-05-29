@@ -4,7 +4,7 @@ $(document).ready(function(){
 		if (query != ""){
 			$("#searchdiv").slideDown(800);
 			$.ajax({
-				type:"GET",
+				type:"POST",
 				data:{'query':query},
 				url:"/searchQuery",
 				success: function(data){

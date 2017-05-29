@@ -21,7 +21,7 @@
 	display:none;
 }
 
-#closematerialselect{
+#closematerialselect, #closematerialupload{
 	position:absolute;
 	top:0px;
 	right:0px;
@@ -32,7 +32,7 @@
 	margin-top:5px;
 }
 
-#closematerialselect:hover{
+#closematerialselect:hover, #closematerialupload:hover{
 	width:22px;
 }
 
