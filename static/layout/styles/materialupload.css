@@ -2,6 +2,7 @@
 	background-color: white;
 	padding-top: 45px;
 	padding-bottom:45px;
+	display:none;
 }
 
 .materialupload input, button, textarea{
@@ -19,20 +20,18 @@
 	border-bottom:1px solid rgb(71,71,71);
 }
 
+.materialupload input{
+	border-color: #562351;
+}
+
 #materialuploadbutton{
 	background-color: #562351;
-	border-style:none;
+	border:1px solid #562351;
 	color:white;
 	font-size:16px;
 	padding: 12px 18px 12px 18px;
 	width:137px;
 	margin-top:22px;
-}
-
-#submitbutton:hover{
-	border:1px solid white;
-	color:white;
-	background-color: rgba(0,0,0,0);
 }
 
 #materialdescription{
@@ -41,4 +40,10 @@
 
 #materialdescription:focus{
 	border-color: #562351;
+}
+
+#materialuploadbutton:hover{
+	border:1px solid rgb(71,71,71);
+	color:rgb(71,71,71);
+	background-color: rgba(0,0,0,0);
 }

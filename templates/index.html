@@ -17,8 +17,39 @@ Licence URI: http://www.os-templates.com/template-terms
 <link href="static/layout/styles/timetable.css" rel="stylesheet" type="text/css" media="all" />
 <link href="static/layout/styles/semmaterials.css" rel="stylesheet" type="text/css" media="all" />
 <link href="static/layout/styles/materialupload.css" rel="stylesheet" type="text/css" media="all" />
+<link href="static/layout/styles/login.css" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body id="top">
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '132655803959344',
+      autoLogAppEvents : true,
+      xfbml            : false,
+      version          : 'v2.9'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<div id="logindiv" class="wrapper row10">
+  <form id="loginform">
+    <img src="static/images/closebutton/closebutton2.png" id="closelogin"/><br/>
+    <input type="text" name="rollno" placeholder="Roll Number" id="rollno" required="required"/>
+    <br/>
+    <input type="password" name="password" placeholder="Password" id="password" required="required"/>
+    <br/>
+    <button id="loginbutton">Login</button>
+    <br/>
+  </form>
+</div>
 <div class="wrapper row0">
   <div id="topbar" class="hoc clear"> 
     <div class="fl_left">
@@ -30,7 +61,7 @@ Licence URI: http://www.os-templates.com/template-terms
     <div class="fl_right">
       <ul>
         <li><a href="#"><i class="fa fa-lg fa-home"></i></a></li>
-        <li><a href="#">Login</a></li>
+        <li><a id="loginlink">Login</a></li>
         <li><a href="/signup">Register</a></li>
       </ul>
     </div>
@@ -142,12 +173,11 @@ Licence URI: http://www.os-templates.com/template-terms
   <img id="closematerialupload" src="static/images/closebutton/closebutton.png" />
   <br/>
   <input type="text" name="uploadername" placeholder="Uploader Name" required="required" id="uploadername"/>
-  <input type="url" name="materiallink" placeholder="Material Link"  id="materiallink"/>
+  <input type="url" name="materiallink" placeholder="Material Link (Either a link or a file must be uploaded)"  id="materiallink"/>
   <input type="file" name="materialfile" placeholder="Material File" id="materialfile" />
   <textarea placeholder="Description (Optional)" id="materialdescription" rows="3"></textarea>
   <button id="materialuploadbutton">Upload</button>
 </div>
-<br/>
 <div class="wrapper row3 hide">
   <main class="hoc container clear"> 
     <!-- main body --> 
@@ -170,7 +200,7 @@ Licence URI: http://www.os-templates.com/template-terms
         <article><i class="btmspace-30 fa fa-3x fa-expeditedssl"></i>
           <h6 class="heading font-x1">Batch Upload</h6>
           <p class="btmspace-30">Upload Materials for your batch-mates to help them ease out their study.</p>
-          <footer><a class="btn" href="#">&nbsp;&nbsp;&nbsp;Upload &rsaquo;&nbsp;&nbsp;&nbsp;</a></footer>
+          <footer><a class="btn semupload">&nbsp;&nbsp;&nbsp;Upload &rsaquo;&nbsp;&nbsp;&nbsp;</a></footer>
         </article>
       </li>
     </ul>
@@ -354,5 +384,6 @@ Licence URI: http://www.os-templates.com/template-terms
 <script src="static/layout/scripts/timetable.js"></script>
 <script src="static/layout/scripts/semmaterials.js"></script>
 <script src="static/layout/scripts/materialupload.js"></script>
+<script src="static/layout/scripts/login.js"></script>
 </body>
 </html>
