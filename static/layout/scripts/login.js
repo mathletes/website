@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	$("#loginlink").click(function(){
-		$("#logindiv").slideDown(200);
+		$("#logindiv").show();
 	});
 
 	$("#closelogin").click(function(){

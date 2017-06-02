@@ -128,5 +128,10 @@ $(document).ready(function(){
      	{    
      		return false;  
      	}  
-  	}  
+  	}
+
+    $("#submitbutton").click(function(){
+      if(flagimg && flaghometown && flagroll && flagcellno && flagfirstname && flaglastname && flagpassword && flagdob && flaghall){
+      }
+    });  
 });
