@@ -1,5 +1,6 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, json
 #from flask_mysqldb import MySQL
+import studentData
 
 app = Flask(__name__)
 #mysql = MySQL(app)
@@ -45,9 +46,19 @@ def signUp():
     return str(rv)"""
 	return render_template("pages/signup.html")
 
+@app.route("/signupfeed", methods=["POST"])
+def signUpFeed():
+	datafilename = "studententry1.json";
+	datafile = open(datafilename, "w+");
+	datafile.write(json.dumps(request.form));
+	imagefile = request.files['userimage'];
+	imagefile.save('var/www/uploads/' + request.form['rollno']+imagefile.filename);
+	datafile.close();
+	return "Success";
+
 @app.route("/announcements")
 def announcement():
 	return render_template("pages/announcements.html");
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True);
